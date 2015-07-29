@@ -1,0 +1,414 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass{beamer}
+
+\mode<presentation> {
+
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+%\usetheme{Madrid}
+\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{pdfpages}
+\usepackage{amsmath}
+\usepackage{mathtools}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[  ]{Constructing Entire Functions \hspace{10mm}  \\ (a summary)} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author{Kirill Lazebnik} % Your name
+\institute[SUNY Stony Brook] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+SUNY Stony Brook \\ % Your institution for the title page
+\medskip
+\textit{Kirill.Lazebnik@stonybrook.edu} % Your email address
+}
+\date{ \today } % Date, can be changed to a custom date
+
+\begin{document}
+
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+
+\begin{frame}
+
+$p(z)=\frac{z^3}{2}-\frac{3z}{2}$
+
+\end{frame}
+
+
+
+\begin{frame}
+
+$p(z)=\frac{z^3}{2}-\frac{3z}{2} $
+
+\vspace{5mm}
+
+$p'(z)=(z-1)(z+1)$
+
+\end{frame}
+
+
+
+\begin{frame}
+
+$p(z)=\frac{z^3}{2}-\frac{3z}{2} $ (two critical values $\pm 1$)
+
+\vspace{5mm}
+
+$p'(z)=(z-1)(z+1)$
+
+\end{frame}
+
+
+
+
+\begin{frame}
+
+$p(z)=\frac{z^4}{4} - \frac{z^3}{3} - \frac{z^2}{2} + z$
+
+\end{frame}
+
+
+\begin{frame}
+
+$p(z)=\frac{z^4}{4} - \frac{z^3}{3} - \frac{z^2}{2} + z$
+
+\vspace{5mm}
+
+$p'(z)=(z-1)^2(z+1)$
+
+\end{frame}
+
+
+\begin{frame}
+
+$p(z)=\frac{z^4}{4} - \frac{z^3}{3} - \frac{z^2}{2} + z$ (two critical values $5/12, -11/12$)
+
+\vspace{5mm}
+
+$p'(z)=(z-1)^2(z+1)$
+
+\end{frame}
+
+
+
+
+\begin{frame}
+
+{\it Shabat} polynomial - 
+
+\end{frame}
+
+
+\begin{frame}
+
+{\it Shabat} polynomial - only has two critical values $\pm 1$
+
+\end{frame}
+
+
+
+\begin{frame}
+
+{\it Shabat} polynomial - only has two critical values $\pm 1$
+
+\vspace{5mm}
+
+{\bf Proposition:} For any {\it Shabat} polynomial $p(z)$, it is true that $p^{-1}[-1,1]$ is a tree.
+
+\end{frame}
+
+
+
+
+\begin{frame}
+
+{\it Shabat} polynomial - only has two critical values $\pm 1$
+
+\vspace{5mm}
+
+{\bf Proposition:} For any {\it Shabat} polynomial $p(z)$, it is true that $p^{-1}[-1,1]$ is a tree, with $\deg(p)$ edges.
+
+\end{frame}
+
+
+
+
+
+\begin{frame}
+
+{\it Shabat} polynomial - only has two critical values $\pm 1$
+
+\vspace{5mm}
+
+{\bf Proposition:} For any {\it Shabat} polynomial $p(z)$, it is true that $p^{-1}[-1,1]$ is a tree.
+
+\vspace{5mm} 
+
+{\bf Theorem {\it (Grothendieck)}:} {\it ALL} combinatorial trees occur as $p^{-1}[-1,1]$ for some {\it Shabat} polynomial $p(z)$.
+
+\vspace{5mm}
+
+\end{frame}
+
+
+
+
+\begin{frame}
+
+{\it Shabat} polynomial - only has two critical values $\pm 1$
+
+\vspace{5mm}
+
+{\bf Proposition:} For any {\it Shabat} polynomial $p(z)$, it is true that $p^{-1}[-1,1]$ is a tree.
+
+\vspace{5mm} 
+
+{\bf Theorem {\it (Grothendieck)}:} {\it ALL} combinatorial trees occur as $p^{-1}[-1,1]$ for some {\it Shabat} polynomial $p(z)$.
+
+\vspace{5mm}
+
+{\bf Theorem {\it (Bishop)}:} Any {\color{red} continua} can be $\epsilon$-approximated in the {\color{red} Hausdorff metric} by some $p^{-1}[-1,1]$. 
+
+\end{frame}
+
+
+
+
+\begin{frame}
+
+\begin{align*} \text{trees }  \iff \text{ {\it Shabat} polynomials } \end{align*}
+
+\end{frame}
+
+
+\begin{frame}
+
+\begin{align*} \text{trees }  \iff \text{ {\it Shabat} polynomials } \end{align*}
+
+\vspace{5mm}
+
+\begin{align*} \text{infinite trees }  \iff \text{ {\color{red}Transcendental Functions }} \end{align*}
+
+\end{frame}
+
+
+\begin{frame}
+
+\begin{align*} \text{trees }  \iff \text{ {\it Shabat} polynomials } \end{align*}
+
+\vspace{5mm}
+
+\begin{align*} \text{infinite trees }  \iff \text{ {\color{red} Subclass of Transcendental Functions } } \end{align*}
+
+\end{frame}
+
+
+\begin{frame}
+
+\begin{align*} \text{trees }  \iff \text{ {\it Shabat} polynomials } \end{align*}
+
+\vspace{5mm}
+
+\begin{align*} \text{infinite trees }  \iff \text{ {\color{red} Subclass of Transcendental Functions } } \end{align*}
+
+{\color{red} $\mathcal{S}_{2,0}$ } - transcendental functions with two critical values $\pm 1$ and no asymptotic values
+
+\end{frame}
+
+
+
+
+\begin{frame} 
+
+$\cosh(z) \coloneqq \frac{e^z+e^{-z}}{2}$
+
+\end{frame}
+
+
+\begin{frame} 
+
+$\cosh(z) \coloneqq \frac{e^z+e^{-z}}{2}$
+
+$\cosh'(z) = \frac{e^z-e^{-z}}{2}$
+
+\end{frame}
+
+
+\begin{frame} 
+
+$\cosh(z) \coloneqq \frac{e^z+e^{-z}}{2}$
+
+$\cosh'(z) = \frac{e^z-e^{-z}}{2} = 0 \implies z = \pi i \text{n} : n \in \mathbb{Z}$
+
+\end{frame}
+
+
+\begin{frame} 
+
+$\cosh(z) \coloneqq \frac{e^z+e^{-z}}{2}$
+
+$\cosh'(z) = \frac{e^z-e^{-z}}{2} = 0 \implies z = \pi i \text{n} : n \in \mathbb{Z}$ (critical points)
+
+\end{frame}
+
+
+
+
+\begin{frame} 
+
+$\cosh(z) \coloneqq \frac{e^z+e^{-z}}{2}$
+
+$\cosh'(z) = \frac{e^z-e^{-z}}{2} = 0 \implies z = \pi i \text{n} : n \in \mathbb{Z}$ (critical points)
+
+\vspace{5mm}
+
+critical values: $\pm 1$ 
+
+\end{frame}
+
+
+
+
+
+
+\begin{frame}
+
+\end{frame}
+
+
+%----------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+
+Put in somewhere notion of {\color{red} conformally balanced}
+
+are inverse images in $\mathcal{S}_{2,0}$ always trees?
+
+\end{frame}
+%----------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{References}
+\footnotesize{
+\begin{thebibliography}{99} % Beamer does not support BibTeX so references must be inserted manually as below
+\bibitem[QCVSDkl]{p1}  Chris Bishop (2014)
+\newblock Constructing Entire Functions By Quasiconformal Folding
+\newblock \emph{Acta Mathematica}
+
+\bibitem[BRMFCADDkl]{p1} Nuria Fagella, Sebastien Godillion, and Xavier Jarque (2014)
+\newblock Wandering domains for composition of entire functions
+\newblock \emph{Journal of Mathematical Analysis and Applications} 
+
+
+\end{thebibliography}
+}
+\end{frame}
+
+%------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+
+\end{document} 
