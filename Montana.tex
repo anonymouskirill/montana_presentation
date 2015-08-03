@@ -103,6 +103,23 @@ SUNY Stony Brook \\ % Your institution for the title page
 \titlepage % Print the title page as the first slide
 \end{frame}
 
+
+
+\title[  ]{Constructing Entire Functions By Quasiconformal Folding \hspace{10mm}  \\ (a summary)} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author{Kirill Lazebnik} % Your name
+\institute[SUNY Stony Brook] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+SUNY Stony Brook \\ % Your institution for the title page
+\medskip
+\textit{Kirill.Lazebnik@stonybrook.edu} % Your email address
+}
+\date{ \today } % Date, can be changed to a custom date
+
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\end{frame}
+
 %----------------------------------------------------------------------------------------
 
 
@@ -128,7 +145,7 @@ $p(z)=\frac{z^3}{2}-\frac{3z}{2} $
 
 \vspace{5mm}
 
-$p'(z)=(z-1)(z+1)$
+$p'(z)=\frac{3}{2}(z-1)(z+1)$
 
 \end{frame}
 
@@ -140,10 +157,24 @@ $p(z)=\frac{z^3}{2}-\frac{3z}{2} $ (two critical values $\pm 1$)
 
 \vspace{5mm}
 
-$p'(z)=(z-1)(z+1)$
+$p'(z)=\frac{3}{2}(z-1)(z+1)$
 
 \end{frame}
 
+
+\begin{frame}
+
+$p(z)=\frac{z^3}{2}-\frac{3z}{2} $ (two critical values $\pm 1$)
+
+\vspace{5mm}
+
+$p'(z)=\frac{3}{2}(z-1)(z+1)$
+
+\vspace{5mm}
+
+\includegraphics[scale=.5]{one}
+
+\end{frame}
 
 
 
@@ -174,6 +205,23 @@ $p(z)=\frac{z^4}{4} - \frac{z^3}{3} - \frac{z^2}{2} + z$ (two critical values $5
 $p'(z)=(z-1)^2(z+1)$
 
 \end{frame}
+
+
+\begin{frame}
+
+$p(z)=\frac{z^4}{4} - \frac{z^3}{3} - \frac{z^2}{2} + z$ (two critical values $5/12, -11/12$)
+
+\vspace{5mm}
+
+$p'(z)=(z-1)^2(z+1)$
+
+\includegraphics[scale=.5]{two}
+
+\end{frame}
+
+
+
+
 
 
 
@@ -297,7 +345,7 @@ $p'(z)=(z-1)^2(z+1)$
 
 \begin{align*} \text{infinite trees }  \iff \text{ {\color{red} Subclass of Transcendental Functions } } \end{align*}
 
-{\color{red} $\mathcal{S}_{2,0}$ } - transcendental functions with two critical values $\pm 1$ and no asymptotic values
+{\color{red} $\mathcal{S}_{2,0}$ } - transcendental functions with two critical values $\pm 1$ and no {\color{red} asymptotic values}
 
 \end{frame}
 
@@ -460,7 +508,7 @@ $V_j$ - the image of $V$ under $\tau$ restricted to $\Omega_j$.
 
 For $r > 0$, define $T(r) = \cup_{e\in T} \{z : \textrm{dist}(z,e) < r\textrm{diam}(e) \}$
 
-The $\tau$-size of edge $e$ is the minimum length of the two images $\tau(e)$
+The {\color{red} $\tau$-size} of edge $e$ is the minimum length of the two images $\tau(e)$
 
 \end{frame}
 
@@ -774,7 +822,7 @@ $T$ has uniformly bounded geometry if:
 
  }
 \vspace{5mm}
-{\bf Theorem:} {\it  Suppose $T$ has bounded geometry and every edge has $\tau$-size $\geq \pi.$  Then there is an $r_0 > 0$, an entire $f$, and a quasiconformal $\phi$}  
+{\bf Theorem:} {\it  Suppose $T$ has bounded geometry and every edge has $\tau$-size $\geq \pi.$  Then there is an $r_0 > 0$, an entire $f$, and a $K$-quasiconformal $\phi$}  
 
 \end{frame}
 
@@ -809,47 +857,7 @@ $T$ has uniformly bounded geometry if:
 
  }
 \vspace{5mm}
-{\bf Theorem:} {\it  Suppose $T$ has bounded geometry and every edge has $\tau$-size $\geq \pi$.  Then there is an $r_0 > 0$, an entire $f$, and a quasiconformal $\phi$ so that $f \circ \phi = \cosh \circ \tau$ off $T(r_0)$. }  
-
-\end{frame}
-
-
-
-
-
-
-
-\begin{frame}
-
-{\tiny $T$ - unbounded, locally finite tree, with a bipartite labeling of vertices.
-
-$\Omega_j$ - components of $\mathbb{C}-T$.
-
-$\tau: \cup \Omega_j \rightarrow \mathbb{C}$ - the map conformal on each $\Omega_j$ to $\mathbb{H}_r$.
-
-$V$ - the vertices of $T$. 
-
-$V_j$ - the image of $V$ under $\tau$ restricted to $\Omega_j$.
-
-For $r > 0$, define $T(r) = \cup_{e\in T} \{z : \textrm{dist}(z,e) < r\textrm{diam}(e) \}$
-
-The $\tau$-size of edge $e$ is the minimum length of the two images $\tau(e)$
-
-\vspace{2.5mm}
-
-$T$ has uniformly bounded geometry if: 
-
-\hspace{5mm} (1) The edges of $T$ are $C^2$ with uniform bounds. 
-
-\hspace{5mm} (2) The angles between adjacent edges are bounded uniformly from zero
-
-\hspace{5mm} (3) Adjacent edges have uniformly comparable lengths
-
-\hspace{5mm} (4) For non-adjacent edges $e, f$, we have $diam(e)/dist(e,f)$ uniformly bounded. 
-
- }
-\vspace{5mm}
-{\bf Theorem:} {\it  Suppose $T$ has bounded geometry and every edge has $\tau$-size $\geq \pi$.  Then there is an $r_0 > 0$, an entire $f$, and a quasiconformal $\phi$ so that $f \circ \phi = \cosh \circ \tau$ off $T(r_0)$. $K$ depends only on the bounded geometry constants of $T$. }  
+{\bf Theorem:} {\it  Suppose $T$ has bounded geometry and every edge has $\tau$-size $\geq \pi$.  Then there is an $r_0 > 0$, an entire $f$, and a $K$-quasiconformal $\phi$ so that $f \circ \phi = \cosh \circ \tau$ off $T(r_0)$. }  
 
 \end{frame}
 
@@ -889,11 +897,243 @@ $T$ has uniformly bounded geometry if:
 
  }
 \vspace{5mm}
-{\bf Theorem:} {\it  Suppose $T$ has bounded geometry and every edge has $\tau$-size $\geq \pi$.  Then there is an $r_0 > 0$, an entire $f$, and a quasiconformal $\phi$ so that $f \circ \phi = \cosh \circ \tau$ off $T(r_0)$. $K$ depends only on the bounded geometry constants of $T$. The only critical values of $f$ are $\pm 1$ and f has no asymptotic values.}  
+{\bf Theorem:} {\it  Suppose $T$ has bounded geometry and every edge has $\tau$-size $\geq \pi$.  Then there is an $r_0 > 0$, an entire $f$, and a $K$-quasiconformal $\phi$ so that $f \circ \phi = \cosh \circ \tau$ off $T(r_0)$. $K$ depends only on the bounded geometry constants of $T$. }  
+
+\end{frame}
+
+
+
+
+
+
+
+\begin{frame}
+
+{\tiny $T$ - unbounded, locally finite tree, with a bipartite labeling of vertices.
+
+$\Omega_j$ - components of $\mathbb{C}-T$.
+
+$\tau: \cup \Omega_j \rightarrow \mathbb{C}$ - the map conformal on each $\Omega_j$ to $\mathbb{H}_r$.
+
+$V$ - the vertices of $T$. 
+
+$V_j$ - the image of $V$ under $\tau$ restricted to $\Omega_j$.
+
+For $r > 0$, define $T(r) = \cup_{e\in T} \{z : \textrm{dist}(z,e) < r\textrm{diam}(e) \}$
+
+The $\tau$-size of edge $e$ is the minimum length of the two images $\tau(e)$
+
+\vspace{2.5mm}
+
+$T$ has uniformly bounded geometry if: 
+
+\hspace{5mm} (1) The edges of $T$ are $C^2$ with uniform bounds. 
+
+\hspace{5mm} (2) The angles between adjacent edges are bounded uniformly from zero
+
+\hspace{5mm} (3) Adjacent edges have uniformly comparable lengths
+
+\hspace{5mm} (4) For non-adjacent edges $e, f$, we have $diam(e)/dist(e,f)$ uniformly bounded. 
+
+ }
+\vspace{5mm}
+{\bf Theorem:} {\it  Suppose $T$ has bounded geometry and every edge has $\tau$-size $\geq \pi$.  Then there is an $r_0 > 0$, an entire $f$, and a $K$-quasiconformal $\phi$ so that $f \circ \phi = \cosh \circ \tau$ off $T(r_0)$. $K$ depends only on the bounded geometry constants of $T$. The only critical values of $f$ are $\pm 1$ and f has no asymptotic values.}  
 
 \end{frame}
 
 %----------------------------------------------------------------------------------------
+
+
+
+
+
+
+\begin{frame}
+
+$f: \mathbb{C} \rightarrow \mathbb{C}$ entire function
+
+\end{frame}
+
+
+
+\begin{frame}
+
+$f: \mathbb{C} \rightarrow \mathbb{C}$ entire function
+
+\vspace{2.5mm}
+
+
+$f^{\circ n}$ is normal in an open set $U$ 
+
+\end{frame}
+
+
+
+\begin{frame}
+
+$f: \mathbb{C} \rightarrow \mathbb{C}$ entire function
+
+\vspace{2.5mm}
+
+$f^{\circ n}$ is normal in an open set $U$ if every sequence of $f^{\circ k}$ contains a further subsequence converging locally uniformly to a holomorphic function $g: U \rightarrow \overline{\mathbb{C}}$
+
+\end{frame}
+
+
+
+
+
+\begin{frame}
+
+$f: \mathbb{C} \rightarrow \mathbb{C}$ entire function
+
+\vspace{2.5mm}
+
+$f^{\circ n}$ is normal in an open set $U$ if every sequence of $f^{\circ k}$ contains a further subsequence converging locally uniformly to a holomorphic function $g: U \rightarrow \overline{\mathbb{C}}$
+
+\vspace{2.5mm}
+
+The Fatou set of $f$ is the set of points $z \in \mathbb{C}$ for which $f$ is normal in some neighborhood of $z$.
+
+\end{frame}
+
+
+
+\begin{frame}
+
+$f: \mathbb{C} \rightarrow \mathbb{C}$ entire function
+
+\vspace{2.5mm}
+
+$f^{\circ n}$ is normal in an open set $U$ if every sequence of $f^{\circ k}$ contains a further subsequence converging locally uniformly to a holomorphic function $g: U \rightarrow \overline{\mathbb{C}}$
+
+\vspace{2.5mm}
+
+The Fatou set of $f$ is the set of points $z \in \mathbb{C}$ for which $f$ is normal in some neighborhood of $z$. The components of the Fatou set are called Fatou components.
+
+\end{frame}
+
+
+
+
+
+
+\begin{frame}
+
+$f: \mathbb{C} \rightarrow \mathbb{C}$ entire function
+
+\vspace{2.5mm}
+
+$f^{\circ n}$ is normal in an open set $U$ if every sequence of $f^{\circ k}$ contains a further subsequence converging locally uniformly to a holomorphic function $g: U \rightarrow \overline{\mathbb{C}}$
+
+\vspace{2.5mm}
+
+The Fatou set of $f$ is the set of points $z \in \mathbb{C}$ for which $f$ is normal in some neighborhood of $z$. The components of the Fatou set are called Fatou components.
+
+\vspace{2.5mm} 
+
+A Fatou component $U$ is called {\it wandering} if $f^n(U) \cap f^m(U) = \emptyset$ 
+
+\end{frame}
+
+
+
+
+
+\begin{frame}
+
+{\bf Theorem:} {\it (Sullivan) Rational maps don't have wandering domains.}
+
+\end{frame}
+
+
+\begin{frame}
+
+{\bf Theorem:} {\it (Sullivan) Rational maps don't have wandering domains.}
+
+\vspace{2.5mm} 
+
+For $f: \mathbb{C} \rightarrow \mathbb{C}$, the singular set $S(f)$ consists of the critical values and asymptotic values of $f$.
+
+\vspace{2.5mm}
+
+\end{frame}
+
+
+\begin{frame}
+
+{\bf Theorem:} {\it (Sullivan) Rational maps don't have wandering domains.}
+
+\vspace{2.5mm} 
+
+For $f: \mathbb{C} \rightarrow \mathbb{C}$, the singular set $S(f)$ consists of the critical values and asymptotic values of $f$.
+
+\vspace{2.5mm}
+
+The {\it Speiser} class $\mathcal{S}$ consists of those transcendental functions for which $S(f)$ is finite. 
+
+\end{frame}
+
+
+
+
+
+
+\begin{frame}
+
+{\bf Theorem:} {\it (Sullivan) Rational maps don't have wandering domains.}
+
+\vspace{2.5mm} 
+
+For $f: \mathbb{C} \rightarrow \mathbb{C}$, the singular set $S(f)$ consists of the critical values and asymptotic values of $f$.
+
+\vspace{2.5mm}
+
+The {\it Speiser} class $\mathcal{S}$ consists of those transcendental functions for which $S(f)$ is finite. 
+
+\vspace{2.5mm} 
+
+{\bf Theorem:} {\it (Golberg and Keen, Eremenko and Lyubich)  Functions in the Speiser Class don't have wandering domains.}
+
+\end{frame}
+
+
+
+
+
+
+\begin{frame}
+
+{\bf Theorem:} {\it (Sullivan) Rational maps don't have wandering domains.}
+
+\vspace{2.5mm} 
+
+For $f: \mathbb{C} \rightarrow \mathbb{C}$, the singular set $S(f)$ consists of the critical values and asymptotic values of $f$.
+
+\vspace{2.5mm}
+
+The {\it Speiser} class $\mathcal{S}$ consists of those transcendental functions for which $S(f)$ is finite. 
+
+\vspace{2.5mm} 
+
+{\bf Theorem:} {\it (Golberg and Keen, Eremenko and Lyubich)  Functions in the Speiser Class don't have wandering domains.}
+
+\vspace{2.5mm}
+
+The Eremenko-Lyubich class $\mathcal{B}$ consists of those transcendental functions with bounded singular set. 
+
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -930,7 +1170,7 @@ $S^+ = \{ x + iy : x > 0, |y| < \pi/2 \}$ is mapped conformally to $\mathbb{H}_r
 
 \vspace{2.5mm}
 
-$a_n = \cosh^{-1}\left( \frac{\pi}{\lambda} \left[ \frac{\lambda}{\pi} \cosh(n\pi) \right] \right)$
+$a_n = \cosh^{-1}\left( \frac{\pi}{\lambda} \left \lfloor{ \frac{\lambda}{\pi} \cosh(n\pi) }\right \rfloor \right)$
 
 \end{frame}
 
@@ -944,7 +1184,7 @@ $S^+ = \{ x + iy : x > 0, |y| < \pi/2 \}$ is mapped conformally to $\mathbb{H}_r
 
 \vspace{2.5mm}
 
-$a_n = \cosh^{-1}\left( \frac{\pi}{\lambda} \left[ \frac{\lambda}{\pi} \cosh(n\pi) \right] \right)$
+$a_n = \cosh^{-1}\left( \frac{\pi}{\lambda} \left \lfloor{ \frac{\lambda}{\pi} \cosh(n\pi) }\right \rfloor \right)$
 
 \vspace{2.5mm}
 
@@ -961,7 +1201,7 @@ $S^+ = \{ x + iy : x > 0, |y| < \pi/2 \}$ is mapped conformally to $\mathbb{H}_r
 
 \vspace{2.5mm}
 
-$a_n = \cosh^{-1}\left( \frac{\pi}{\lambda} \left[ \frac{\lambda}{\pi} \cosh(n\pi) \right] \right)$
+$a_n = \cosh^{-1}\left( \frac{\pi}{\lambda} \left \lfloor{ \frac{\lambda}{\pi} \cosh(n\pi) }\right \rfloor \right)$
 
 \vspace{2.5mm}
 
@@ -977,7 +1217,7 @@ $S^+ = \{ x + iy : x > 0, |y| < \pi/2 \}$ is mapped conformally to $\mathbb{H}_r
 
 \vspace{2.5mm}
 
-$a_n = \cosh^{-1}\left( \frac{\pi}{\lambda} \left[ \frac{\lambda}{\pi} \cosh(n\pi) \right] \right)$
+$a_n = \cosh^{-1}\left( \frac{\pi}{\lambda} \left \lfloor{ \frac{\lambda}{\pi} \cosh(n\pi) }\right \rfloor \right)$
 
 \vspace{2.5mm}
 
@@ -996,7 +1236,7 @@ $S^+ = \{ x + iy : x > 0, |y| < \pi/2 \}$ is mapped conformally to $\mathbb{H}_r
 
 \vspace{2.5mm}
 
-$a_n = \cosh^{-1}\left( \frac{\pi}{\lambda} \left[ \frac{\lambda}{\pi} \cosh(n\pi) \right] \right)$
+$a_n = \cosh^{-1}\left( \frac{\pi}{\lambda} \left \lfloor{ \frac{\lambda}{\pi} \cosh(n\pi) }\right \rfloor \right)$
 
 \vspace{2.5mm}
 
@@ -1014,7 +1254,7 @@ $S^+ = \{ x + iy : x > 0, |y| < \pi/2 \}$ is mapped conformally to $\mathbb{H}_r
 
 \vspace{2.5mm}
 
-$a_n = \cosh^{-1}\left( \frac{\pi}{\lambda} \left[ \frac{\lambda}{\pi} \cosh(n\pi) \right] \right)$
+$a_n = \cosh^{-1}\left( \frac{\pi}{\lambda} \left \lfloor{ \frac{\lambda}{\pi} \cosh(n\pi) }\right \rfloor \right)$
 
 \vspace{2.5mm}
 
@@ -1034,7 +1274,7 @@ $S^+ = \{ x + iy : x > 0, |y| < \pi/2 \}$ is mapped conformally to $\mathbb{H}_r
 
 \vspace{2.5mm}
 
-$a_n = \cosh^{-1}\left( \frac{\pi}{\lambda} \left[ \frac{\lambda}{\pi} \cosh(n\pi) \right] \right)$
+$a_n = \cosh^{-1}\left( \frac{\pi}{\lambda} \left \lfloor{ \frac{\lambda}{\pi} \cosh(n\pi) }\right \rfloor \right)$
 
 \vspace{2.5mm}
 
@@ -1055,7 +1295,7 @@ $S^+ = \{ x + iy : x > 0, |y| < \pi/2 \}$ is mapped conformally to $\mathbb{H}_r
 
 \vspace{2.5mm}
 
-$a_n = \cosh^{-1}\left( \frac{\pi}{\lambda} \left[ \frac{\lambda}{\pi} \cosh(n\pi) \right] \right)$
+$a_n = \cosh^{-1}\left( \frac{\pi}{\lambda} \left \lfloor{ \frac{\lambda}{\pi} \cosh(n\pi) }\right \rfloor \right)$
 
 \vspace{2.5mm}
 
@@ -1078,7 +1318,7 @@ $S^+ = \{ x + iy : x > 0, |y| < \pi/2 \}$ is mapped conformally to $\mathbb{H}_r
 
 \vspace{2.5mm}
 
-$a_n = \cosh^{-1}\left( \frac{\pi}{\lambda} \left[ \frac{\lambda}{\pi} \cosh(n\pi) \right] \right)$
+$a_n = \cosh^{-1}\left( \frac{\pi}{\lambda} \left \lfloor{ \frac{\lambda}{\pi} \cosh(n\pi) }\right \rfloor \right)$
 
 \vspace{2.5mm}
 
@@ -1104,7 +1344,7 @@ $z_n = a_n + i\pi, D_n = \{ z \in \mathbb{C} : \left| z - z_n \right| < 1\} $ is
 
 \vspace{2.5mm}
 
-$a_n = \cosh^{-1}\left( \frac{\pi}{\lambda} \left[ \frac{\lambda}{\pi} \cosh(n\pi) \right] \right)$
+$a_n = \cosh^{-1}\left( \frac{\pi}{\lambda} \left \lfloor{ \frac{\lambda}{\pi} \cosh(n\pi) }\right \rfloor \right)$
 
 \vspace{2.5mm}
 
@@ -1138,7 +1378,7 @@ $z_n = a_n + i\pi, D_n = \{ z \in \mathbb{C} : \left| z - z_n \right| < 1\} $ is
 
 \vspace{2.5mm}
 
-$a_n = \cosh^{-1}\left( \frac{\pi}{\lambda} \left[ \frac{\lambda}{\pi} \cosh(n\pi) \right] \right)$
+$a_n = \cosh^{-1}\left( \frac{\pi}{\lambda} \left \lfloor{ \frac{\lambda}{\pi} \cosh(n\pi) }\right \rfloor \right)$
 
 \vspace{2.5mm}
 
@@ -1175,7 +1415,7 @@ $z_n = a_n + i\pi, D_n = \{ z \in \mathbb{C} : \left| z - z_n \right| < 1\} $ is
 
 \vspace{2.5mm}
 
-$a_n = \cosh^{-1}\left( \frac{\pi}{\lambda} \left[ \frac{\lambda}{\pi} \cosh(n\pi) \right] \right)$
+$a_n = \cosh^{-1}\left( \frac{\pi}{\lambda} \left \lfloor{ \frac{\lambda}{\pi} \cosh(n\pi) }\right \rfloor \right)$
 
 \vspace{2.5mm}
 
@@ -1211,7 +1451,7 @@ $z_n = a_n + i\pi, D_n = \{ z \in \mathbb{C} : \left| z - z_n \right| < 1\} $ is
 
 \vspace{1.25mm}
 
-$a_n = \cosh^{-1}\left( \frac{\pi}{\lambda} \left[ \frac{\lambda}{\pi} \cosh(n\pi) \right] \right)$
+$a_n = \cosh^{-1}\left( \frac{\pi}{\lambda} \left \lfloor{ \frac{\lambda}{\pi} \cosh(n\pi) }\right \rfloor \right)$
 
 \vspace{1.25mm}
 
@@ -1248,7 +1488,7 @@ $z_n = a_n + i\pi, D_n = \{ z \in \mathbb{C} : \left| z - z_n \right| < 1\} $ is
 
 \vspace{1.25mm}
 
-$a_n = \cosh^{-1}\left( \frac{\pi}{\lambda} \left[ \frac{\lambda}{\pi} \cosh(n\pi) \right] \right)$
+$a_n = \cosh^{-1}\left( \frac{\pi}{\lambda} \left \lfloor{ \frac{\lambda}{\pi} \cosh(n\pi) }\right \rfloor \right)$
 
 \vspace{1.25mm}
 
@@ -1290,7 +1530,7 @@ $z_n = a_n + i\pi, D_n = \{ z \in \mathbb{C} : \left| z - z_n \right| < 1\} $ is
 
 \vspace{1.25mm}
 
-$a_n = \cosh^{-1}\left( \frac{\pi}{\lambda} \left[ \frac{\lambda}{\pi} \cosh(n\pi) \right] \right)$
+$a_n = \cosh^{-1}\left( \frac{\pi}{\lambda} \left \lfloor{ \frac{\lambda}{\pi} \cosh(n\pi) }\right \rfloor \right)$
 
 \vspace{1.25mm}
 
@@ -1335,7 +1575,7 @@ $z_n = a_n + i\pi, D_n = \{ z \in \mathbb{C} : \left| z - z_n \right| < 1\} $ is
 
 \vspace{1.25mm}
 
-$a_n = \cosh^{-1}\left( \frac{\pi}{\lambda} \left[ \frac{\lambda}{\pi} \cosh(n\pi) \right] \right)$
+$a_n = \cosh^{-1}\left( \frac{\pi}{\lambda} \left \lfloor{ \frac{\lambda}{\pi} \cosh(n\pi) }\right \rfloor \right)$
 
 \vspace{1.25mm}
 
@@ -1379,13 +1619,6 @@ $z_n = a_n + i\pi, D_n = \{ z \in \mathbb{C} : \left| z - z_n \right| < 1\} $ is
 
 
 %----------------------------------------------------------------------------------------
-\begin{frame}
-
-Put in somewhere notion of {\color{red} conformally balanced}
-
-do a better job with introducting fatou sets/julia sets
-
-\end{frame}
 %----------------------------------------------------------------------------------------
 
 
