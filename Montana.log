@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  4 AUG 2015 08:22
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  23 NOV 2015 09:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1157,7 +1157,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1653.
  ) 
 Here is how much of TeX's memory you used:
  17080 strings out of 493315
- 315751 string characters out of 6137904
+ 315755 string characters out of 6137904
  396389 words of memory out of 5000000
  19970 multiletter control sequences out of 15000+600000
  12811 words of font info for 47 fonts, out of 8000000 for 9000
@@ -1185,7 +1185,7 @@ e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/
 2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/20
 13/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texliv
 e/2013/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on Montana.pdf (76 pages, 360626 bytes).
+Output written on Montana.pdf (76 pages, 360728 bytes).
 PDF statistics:
  2160 PDF objects out of 2487 (max. 8388607)
  2027 compressed objects within 21 object streams
